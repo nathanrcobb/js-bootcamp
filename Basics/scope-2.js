@@ -9,7 +9,7 @@ if (true) {
     // let name = 'Mike'
     if (true) {
         // Leaked global when var is not explicitly defined elsewhere
-        let name = 'Jen'
+        name = 'Jen'
         // Variable shadowing, will use parent scope rather than global
         console.log(name)
     }
