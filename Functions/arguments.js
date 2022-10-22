@@ -9,7 +9,7 @@ console.log(result)
 
 // Default arguments
 let getScoreText = function (name = 'Anonymous', score = 0) {
-    return 'Name: ' + name + ' - ' + 'Score: ' + score
+    return `Name: ${name} - Score: ${score}`
 }
 
 let scoreText = getScoreText(undefined,99)
@@ -17,9 +17,12 @@ console.log(scoreText)
 
 // Challenge
 
-let getTip = function (total, percent = 0.2) {
-    return total * percent
+let getTip = function (total, tipPercent = 0.2) {
+    let percent = tipPercent * 100
+    let tip = total * tipPercent
+
+    return `A ${percent}% tip on $${total} would be $${tip}`
 }
 
-let tip = getTip(45, 0.15)
+let tip = getTip(60)
 console.log(tip)
