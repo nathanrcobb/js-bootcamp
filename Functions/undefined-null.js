@@ -1,3 +1,4 @@
+// Undefined for variable
 let name
 
 name = 'Nate'
